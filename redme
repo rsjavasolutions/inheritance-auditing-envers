@@ -1,0 +1,25 @@
+swagger 3.0
+
+http://localhost:8080/swagger-ui/index.html#/
+
+http://localhost:8080/login
+
+http://localhost:8080/h2-console/
+
+_______________________________________________________________________________________________
+
+Auditing with Spring Data JPA
+https://www.youtube.com/watch?v=Pc7Une_5rMs&ab_channel=JavaTechie
+
+klasa AbstractAuditingEntity
+ + konfiguracja w security umożliwiająca wyciągnięcie nazyw zalogowanego użytkownika z konteksu
+ + adnotacja @EnableJpaAuditing w klasie konfiguracyjnej PersistenceConfig
+
+ _______________________________________________________________________________________________
+
+Spring Boot Auditing using Spring Data Envers
+https://www.youtube.com/watch?v=W1Rtn28lHU8&t=246s&ab_channel=JavaTechie
+
+adnotacja nad klasą startową
+@EnableJpaRepositories(repositoryFactoryBeanClass = EnversRevisionRepositoryFactoryBean.class)
+
